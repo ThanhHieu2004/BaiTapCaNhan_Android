@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/home_ic_maths"/>
+
+    <LinearLayout
+        android:layout_margin="12dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Course name"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:paddingVertical="4dp"
+            android:id="@+id/textViewCourseName"/>
+
+        <TextView
+            android:id="@+id/textViewCourseDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:paddingVertical="4dp"
+            android:text="Course Description. The course description must be succint and understandable"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <Button
+                android:id="@+id/buttonSignUp"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="Sign up"
+                />
+
+            <ImageButton
+                android:id="@+id/imageButtonFavorite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/favorite_course"/>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
